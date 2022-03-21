@@ -42,13 +42,13 @@ This solution using PowerShell & WPF not only solved that challenge the team & e
    <a href="https://github.com/karlamber/HostsFileManager/issues/new/choose" title="Report Bug / Request Feature">Issues / Feature Requests</a>
 </p>
 
-## Features
+## :sparkler: Features
 - [x] Friendly Graphical Interface
 - [x] Centralized management of global hosts entries
 - [x] Inclusion of "restricted" hosts entry groups
 - [x] Inclusion of "local" hosts entry groups
 
-## Prerequisites
+## :clipboard: Prerequisites
 - PowerShell 3.0
 - Users must be able to execute Powershell Scripts
 - Users must have local administrator permissions (to edit hosts file)
@@ -64,7 +64,7 @@ This solution using PowerShell & WPF not only solved that challenge the team & e
     1. Warning - _Bypass_ is only used if you do not have the ability to digitally sign the script!!!
 1. Deploy shortcut to end-users desktop. (SCCM, Group Policy, email, etc.)
 
-## Screenshots
+## :camera: Snapshots
 ![](./images/HostsFileManager_1.jpg)
 ![](./images/HostsFileManager_2.jpg)
 ![](./images/HostsFileManager_3.jpg)
@@ -75,6 +75,6 @@ This solution using PowerShell & WPF not only solved that challenge the team & e
 ![](./images/HostsFileManager_9.jpg)
 ![](./images/HostsFileManager_8.jpg)
 
-## Future Updates
+## :soon: Future Updates
 
 - [ ] Add functionality to automatically add '# Managed Entry For' comment for each hosts entry
