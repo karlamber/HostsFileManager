@@ -49,9 +49,9 @@ This solution using PowerShell & WPF not only solved that challenge the team & e
 - [x] Inclusion of "local" hosts entry groups
 
 ## Prerequisites
-PowerShell 3.0
-Users must be able to execute Powershell Scripts
-Users must have local administrator permissions (to edit hosts file)
+- PowerShell 3.0
+- Users must be able to execute Powershell Scripts
+- Users must have local administrator permissions (to edit hosts file)
 
 ## 🛠️ Installation Steps
 
