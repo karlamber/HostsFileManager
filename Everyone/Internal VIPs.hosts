@@ -1,0 +1,4 @@
+﻿173.210.15.24  www.website.com             # Managed Hosts entry for bypassing global CDN
+173.210.15.44  shoppingcart.website.com    # Managed Hosts entry for bypassing global CDN
+173.210.15.16  support.website.com         # Managed Hosts entry for bypassing global CDN
+173.210.15.87  services.website.com        # Managed Hosts entry for bypassing global CDN

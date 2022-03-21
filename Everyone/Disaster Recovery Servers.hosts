@@ -1,0 +1,4 @@
+10.10.99.1  www.website.com             # Managed Hosts entry for DR testing
+10.10.99.2  shoppingcart.website.com    # Managed Hosts entry for DR testing
+10.10.99.3  support.website.com         # Managed Hosts entry for DR testing
+10.10.99.4  services.website.com        # Managed Hosts entry for DR testing
