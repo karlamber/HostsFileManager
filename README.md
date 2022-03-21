@@ -3,13 +3,14 @@
   </a>
 </p>
 <h1 align="center"> HostsFileManager </h1>
-<p align="center">Back in 2014 - I was the Lead DevOps Engineer on a major site-redesign project, and I needed a way for
-developers, QA Testors, Project Managers, and Business Users to individually manage switching between the
-current production environment, and the *new* production environment - consisting of over 20 updated
-microsites.<br> This project was the solution - hopefully it will help you too! </p>
+<p align="center">As the Lead DevOps Engineer on a major site-redesign project almost 8 years ago,
+I needed a solution for a large team of developers, QA Testers, Project Managers, and Business Users
+to individually switch between the current production environment and the *new* production environment.<br>
+This solution using PowerShell & WPF not only solved that challenge the team & end users, but it also won me a shiny
+"Bright Ideas" award. 🏆 </p>
 
 <p align="center">
-<a href="https://github.com/karlamber/HostsFileManager/blob/master/LICENSE" title="License">
+<a href="https://github.com/karlamber/HostsFileManager/LICENSE" title="License">
 <img src="https://img.shields.io/github/license/karlamber/HostsFileManager?label=License&logo=Github&style=flat-square" alt="HostsFileManager License"/>
 </a>
 <a href="https://github.com/karlamber/HostsFileManager/fork" title="Forks">
@@ -38,9 +39,7 @@ microsites.<br> This project was the solution - hopefully it will help you too! 
 
 <h2 align="center">🌐 Links 🌐</h2>
 <p align="center">
-    <a href="https://github.com/karlamber/HostsFileManager" title="HostsFileManager">📂 Repo</a>
-    ·
-    <a href="https://github.com/karlamber/HostsFileManager/issues/new/choose" title="🐛Report Bug/🎊Request Feature">🚀 Got Issue</a>
+   <a href="https://github.com/karlamber/HostsFileManager/issues/new/choose" title="Report Bug / Request Feature">Issues / Feature Requests</a>
 </p>
 
 ## Features
@@ -49,8 +48,9 @@ microsites.<br> This project was the solution - hopefully it will help you too! 
 - [x] Inclusion of "restricted" hosts entry groups
 - [x] Inclusion of "local" hosts entry groups
 
-## Prerequisite
+## Prerequisites
 PowerShell 3.0
+Users must be able to execute Powershell Scripts
 Users must have local administrator permissions (to edit hosts file)
 
 ## 🛠️ Installation Steps
@@ -59,17 +59,22 @@ Users must have local administrator permissions (to edit hosts file)
 1. Place .ps1 script, shortcut, and directories with .hosts files in network share
 1. If possible - digitally sign .ps1 file with Trusted Publisher certificate (if your enterprise supports that.)
 1. Modify shortcut with correct path to .ps1 script
+    1. `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -ExecutionPolicy "Bypass" -Nologo -Sta -NonInteractive -command "& ' \\<server>\<share>\HostsFileManager.ps1'"`
+    1. Shortcut should have "Run as Administrator" checked.
+    1. Warning - _Bypass_ is only used if you do not have the ability to digitally sign the script!!!
 1. Deploy shortcut to end-users desktop. (SCCM, Group Policy, email, etc.)
+
+## Screenshots
+![](./images/HostsFileManager_1.jpg)
+![](./images/HostsFileManager_2.jpg)
+![](./images/HostsFileManager_3.jpg)
+![](./images/HostsFileManager_4.jpg)
+![](./images/HostsFileManager_5.jpg)
+![](./images/HostsFileManager_6.jpg)
+![](./images/HostsFileManager_7.jpg)
+![](./images/HostsFileManager_9.jpg)
+![](./images/HostsFileManager_8.jpg)
 
 ## Future Updates
 
-- [ ] Add Screenshots to README
 - [ ] Add functionality to automatically add '# Managed Entry For' comment for each hosts entry
-- [ ] Update Documentation
-
-## Karl Amber
-
-- 🌌 [Profile](https://github.com/karlamber "Karl Amber")
-
-- 🏮 [Email](mailto:karlramber@gmail.com?subject=Hi%20from%20<repo-email> "Hi!")
-
