@@ -1,6 +1,5 @@
 ﻿<p align="center">
   <a href="https://github.com/karlamber/HostsFileManager" title="HostsFileManager">
-    <img src="https://kingtechnologies.in/assets/images/Logo.webp" width="80px" alt="HostsFileManager"/>
   </a>
 </p>
 <h1 align="center"> HostsFileManager </h1>
@@ -63,6 +62,8 @@ Users must have local administrator permissions (to edit hosts file)
 1. Deploy shortcut to end-users desktop. (SCCM, Group Policy, email, etc.)
 
 ## Future Updates
+
+- [ ] Add Screenshots to README
 - [ ] Add functionality to automatically add '# Managed Entry For' comment for each hosts entry
 - [ ] Update Documentation
 
