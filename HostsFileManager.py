@@ -16,7 +16,7 @@ if platform == 'win32':
     editor = 'notepad.exe'
 elif platform == 'darwin':
     hostsfile = '/etc/hosts'
-    editor = 'TextEdit'
+    editor = 'open'
 elif platform == 'linux' or platform == 'linux2':
     hostsfile = '/etc/hosts'
     editor = 'gedit'
@@ -60,7 +60,12 @@ def display_entries():
 
 
 def edit_hostsfile():
-    os.system(f"start /wait {editor} {hostsfile}")
+    if platform == "darwin":
+        os.system(f"sudo {editor} {hostsfile} -t")
+    elif platform == "win32":
+        os.system(f"start /wait {editor} {hostsfile}")
+    else:
+        os.system("sudo vi hostsfile") 
 
 
 def add_entries():
