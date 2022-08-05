@@ -3,7 +3,7 @@
   </a>
 </p>
 <h1 align="center"> HostsFileManager </h1>
-<p align="center">As the Lead DevOps Engineer on a major site-redesign project almost 8 years ago,
+<p align="center">As the Lead DevOps Engineer on a major site-redesign project,
 I needed a solution for a large team of developers, QA Testers, Project Managers, and Business Users
 to individually switch between the current production environment and the *new* production environment
 using hosts files.<br>
